@@ -20,10 +20,8 @@ var weeks={
     0:"Sunday"
 };
 button.addEventListener('click',function(){
-    if (location.protocol === 'http:'){
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=e98a05a5a6bacd014dafbcf7515001b4')}
-    else{
-        fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=e98a05a5a6bacd014dafbcf7515001b4')}
+    
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=e98a05a5a6bacd014dafbcf7515001b4')
     .then(res=> res.json())
     .then(data=>{
         
