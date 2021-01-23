@@ -59,8 +59,13 @@ input[type="text"]{
     height:6cm;
 }
 
-@media only screen and(max-width:800px){
+@media only screen and (max-width:650px){
     body{
-        width:9cm;
+        background-size:cover;
+        height:30cm;
+        overflow: hidden;
+    }
+    .button{
+        margin-left: 5cm;
     }
 }
