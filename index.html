@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WeatherApp</title>
+        <link rel="icon" href="./images/space1.png" type="image/x-icon" ></link>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <div class="input">
+            <input type="text" class="InputValue" placeholder="Enter city..." required autocomplete="off"/>
+            <button value="Search" class="button">Search</button>
+        </div>
+
+        <div class="display">
+            <div class="da">
+                <p>  </p>
+            </div>
+            <h3>City name:</h3>
+            <div class="name">
+                <p>-----</p>
+            </div>
+            <div class="temp-icon">
+                <img id="temp-icon" src="./images/icons/sun.svg"/>
+            </div>
+            <h3>Weather Type:</h3>
+            <div class="type">
+                <p>----</p>
+            </div>
+            <h3>Temperature:</h3>
+            <div class="temp">
+                <p>----</p>
+            </div>
+
+            <h3>Pressure:</h3>
+            <div class="pressure">
+                 <p>-----Pa</p>
+            </div>
+            <h3>Wind Speed:</h3>
+            <div class="wind">
+                <p>----km/h</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
