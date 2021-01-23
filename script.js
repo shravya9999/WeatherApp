@@ -1,28 +1,4 @@
-/*console.log("Hello World!");
-a="2345";
-{
-    console.log("the number is: ",typeof(a));
-}
-
-for(a=0;a<6;a++)
-{
-    console.log("a value is: ",a);
-}
-
-function myfun()
-{
-    for(a=0;a<5;a++)
-        console.log(a);
-        
-}
-var a;
-var b=6;
-console.log(a*b);
-myfun();
-myfun();
-console.log()*/
-// Commenting 
-/*Commenting more lines*/
+/*Weather App*/
 var loc=document.querySelector('.name');
 var tempicon=document.getElementById("temp-icon");
 var tempValue=document.querySelector('.temp');
@@ -44,7 +20,10 @@ var weeks={
     0:"Sunday"
 };
 button.addEventListener('click',function(){
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=e98a05a5a6bacd014dafbcf7515001b4')
+    if (location.protocol === 'http:'){
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=e98a05a5a6bacd014dafbcf7515001b4')}
+    else{
+        fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=e98a05a5a6bacd014dafbcf7515001b4')}
     .then(res=> res.json())
     .then(data=>{
         
